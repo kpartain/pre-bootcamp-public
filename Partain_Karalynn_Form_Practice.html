@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="" />
+        <style>
+            #gender li {
+                list-style: none;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration</h1>
+        <form>
+            <label for="firstName" name="firstName">First Name: *</label>
+            <input type="text" name="firstName" required />
+            <br />
+            <label for="lastName" name="lastName">Last Name: *</label>
+            <input type="text" name="lastName" required />
+            <br />
+            <label for="email" name="email"> Email: *</label>
+            <input type="email" name="email" required />
+            <br />
+            <label for="password" name="password" id="password">
+                Password: *</label
+            >
+            <input type="password" name="password" required />
+            <br />
+            <label
+                for="passwordConfirm"
+                name="passwordConfirm"
+                id="passwordConfirm"
+            >
+                Confirm Password: *</label
+            >
+            <input name="passwordConfirm" required="required" type="password" id="passwordConfirm"/>
+            <br />
+            <label for="birthdate" name="birthdate" placeholder="mm/dd/yyyy">
+                Birthday: *</label
+            >
+            <input type="date" name="birthdate" />
+            <br />
+
+            <p>Gender Identity:</p>
+            <ul id="gender">
+                <li>
+                    <input type="radio" name="gender" value="male" />
+                    <label for="male">Male</label>
+                </li>
+                <li>
+                    <input type="radio" name="gender" value="female" />
+                    <label for="female">Female</label>
+                </li>
+                <li>
+                    <input type="radio" name="gender" value="nonBinary" />
+                    <label for="nonBinary">Non-Binary</label>
+                </li>
+                <li>
+                    <input type="radio" name="gender" value="noAnswer" />
+                    <label for="noAnswer">Prefer Not to Answer</label>
+                </li>
+            </ul>
+            <br />
+            <p>A short description about myself:</p><br>
+            <textarea style="width: 250px;"></textarea>
+            <br />
+            <label for="favoriteLanguage">Favorite Language:</label>
+            <select name="favoriteLanguage">
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="cSharp">C#</option>
+            </select>
+            <br />
+            <input type="checkbox" name="emailAgree" checked>
+            <label for="emailAgree">Yes, I would like to recieve periodic email updates<label>
+            <br />
+            <!-- button onsubmit create account -->
+            <button type="submit" value="Submit">Create an Account</button>
+            <br />
+            <p>*Indicates a required field</p>
+        </form>
+    </body>
+</html>
